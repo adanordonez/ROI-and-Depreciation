@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Investment Calculator</title>
+</head>
+<body>
+    <h2>Property Investment Calculator</h2>
+    <form id="investmentForm">
+        <label for="propertyType">Select Property Type:</label><br>
+        <select id="propertyType" name="propertyType">
+            <option value="residential">Residential Rental Property</option>
+            <option value="commercial">Commercial Property</option>
+        </select><br>
+
+        <label for="totalInvestment">Total Investment in Property ($):</label><br>
+        <input type="number" id="totalInvestment" name="totalInvestment"><br>
+
+        <label for="monthlyIncome">Monthly Rental Income ($):</label><br>
+        <input type="number" id="monthlyIncome" name="monthlyIncome"><br>
+
+        <button type="button" onclick="calculateInvestmentReturns()">Calculate Returns</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
